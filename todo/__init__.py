@@ -16,9 +16,9 @@ app.app_context().push()
 #views
 class Todo(db.Model):
     id =db.Column(db.Integer,primary_key=True)
-    title=db.Column(db.String(100))
+    title=db.Column(db.String(200))
     complete=db.Column(db.Boolean)
-
+# add def init---> self.name n all
 
 
 @app.route('/')
